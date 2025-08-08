@@ -46,6 +46,7 @@ composer install
 ```
 
 🧱 Banco de Dados
+
 🔸 Dump inicial:
 
 O arquivo dump.sql contém toda a estrutura e dados iniciais:
@@ -58,7 +59,7 @@ Tabela climas
 
 Tabela riscos
 
-Tabela logs
+OBS Confira o banco de dados acecssando o PhpMyadmin no navegador http://localhost:8080, com o usuário "root" e senha "root"
 
 Se o banco não subir automaticamente, você pode executá-lo manualmente:
 ```bash
