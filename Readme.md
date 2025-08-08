@@ -17,23 +17,33 @@ Este projeto é uma API REST desenvolvida em **PHP puro**, com foco na **anális
 
 ## 🐳 Como subir o ambiente com Docker
 
-1. **Clone o repositório:**
+OBS: Com o docker em execução
+
+1. **Clone o repositório e entre no mesmo:**
 
 ```bash
 git clone https://github.com/fabianochaves/desafiopx.git
+```
+
+```bash
 cd desafiopx
+```
 
 2. **Suba os Containers:**
 
+```bash
 docker-compose up -d
+```
 
 3. **Acesse o Container PHP:**
-
+```bash
 docker exec -it php_app bash
+```
 
 4. **Instale as dependências do composer:**
-
+```bash
 composer install
+```
 
 🧱 Banco de Dados
 🔸 Dump inicial:
@@ -51,7 +61,9 @@ Tabela riscos
 Tabela logs
 
 Se o banco não subir automaticamente, você pode executá-lo manualmente:
+```bash
 docker exec -i mysql mysql -u root -proot projeto_start < dump.sql
+```
 
 Ou então manualmente copiando os comandos que estão no arquivo dump.sql
 
