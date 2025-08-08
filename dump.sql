@@ -36,6 +36,7 @@ INSERT INTO `categorias` (`id_categoria`, `nome_categoria`,`tipo_categoria`, `st
 CREATE TABLE `climas` (
   `id_clima` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `nome_clima` varchar(50) NOT NULL,
+  `isCritico_clima` int(11) NOT NULL,
   `status_clima` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -57,10 +58,3 @@ INSERT INTO `riscos` (`id_risco`, `nome_risco`, `status_risco`) VALUES
 (2, 'Médio', 1),
 (3, 'Alto', 1),
 (4, 'Crítico', 1);
-
-CREATE TABLE logs (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    mensagem TEXT NOT NULL,
-    contexto VARCHAR(255) DEFAULT NULL,
-    created_at DATETIME DEFAULT CURRENT_TIMESTAMP
-);
