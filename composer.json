@@ -1,0 +1,22 @@
+{
+    "name": "fabianochaves/projeto_start",
+    "description": "Projeto PHP Teste",
+    "type": "project",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Config\\": "config/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Fabiano Chaves Gonçalves",
+            "email": "fabianochavesg@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require-dev": {}
+}
