@@ -14,7 +14,7 @@ CREATE TABLE `cargas` (
   `motivosRisco_carga` VARCHAR(500) NULL,
   `sugestoesRisco_carga` VARCHAR(500) NULL,
   `status_carga` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 
 CREATE TABLE `categorias` (
@@ -22,7 +22,7 @@ CREATE TABLE `categorias` (
   `nome_categoria` varchar(100) NOT NULL,
   `tipo_categoria` varchar(20) NOT NULL,
   `status_categoria` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 
 INSERT INTO `categorias` (`id_categoria`, `nome_categoria`,`tipo_categoria`, `status_categoria`) VALUES
@@ -38,7 +38,7 @@ CREATE TABLE `climas` (
   `nome_clima` varchar(50) NOT NULL,
   `isCritico_clima` int(11) NOT NULL,
   `status_clima` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 
 INSERT INTO `climas` (`id_clima`, `nome_clima`, `isCritico_clima`, `status_clima`) VALUES
@@ -51,7 +51,7 @@ CREATE TABLE `riscos` (
   `id_risco` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `nome_risco` varchar(50) NOT NULL,
   `status_risco` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 INSERT INTO `riscos` (`id_risco`, `nome_risco`, `status_risco`) VALUES
 (1, 'Baixo', 1),
