@@ -84,7 +84,7 @@ config/Database.php	Classe de conexão com o banco
 POST http://localhost:8000/cargas
 
 🔹 Exemplo de Body (JSON):
-
+```json
 {
   "origem": "São Paulo",
   "uf_origem": "SP",
@@ -97,9 +97,9 @@ POST http://localhost:8000/cargas
   "clima": 2,
   "seguro": false
 }
-
+```
 🔹 Resposta esperada:
-
+```json
 {
   "nivel_risco": X,
   "descricao_risco": "XXX",
@@ -107,6 +107,7 @@ POST http://localhost:8000/cargas
   "sugestoes": "XXXX",
   "id_carga": X
 }
+```
 
 📌 Observações
 As categorias e climas vêm do banco (categorias, climas) e são usados nas regras de cálculo.
